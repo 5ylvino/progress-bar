@@ -8,26 +8,53 @@
     flex-direction: column;
 }
 
+
 /* bar */
 .barContainer{
     margin: auto;
     width: 60%;
 }
+.barContainer > :nth-child(1) #value{
+    background-color: limegreen;
+}
+.barContainer > :nth-child(2) #value{
+    background-color: red;
+}
+.barContainer > :nth-child(3) #value{
+    background-color: white;
+}
+.barContainer > :nth-child(4) #value{
+    background-color: blue;
+}
+.barContainer > :nth-child(5) #value{
+    background-color: gold;
+}
 
-#bar #value {
+/* aligning bar hieght */
+.bar #value {
     height: 30%;
 }
 
-#bar{
-    margin: 5px;
+/* bar frame*/
+.bar{
+    margin: 30px;
     width: 100%;
     border-radius: 20px;
     background-color: #f0f0f0; 
 }
+
+/* bar value 50%*/
 #value{
     width: 50%;
     border-radius: 20px;
-    background-color: blue;
     text-align: end;
-    padding: 2px;
+    padding: 5px 15px;
+    box-shadow: 2px 2px 3px lightgray;
+    border: .5px solid lightgray;
+}
+
+
+button{
+    width: 30%;
+    margin: auto;
 }
